@@ -19,8 +19,8 @@ jobs:
     steps:
       - id: go-cache-paths
         run: |
-          echo "go-build=$(go env GOCACHE)" >> GITHUB_STATE
-          echo "go-mod=$(go env GOMODCACHE)" >> GITHUB_STATE
+          echo "go-build=$(go env GOCACHE)" >> GITHUB_OUTPUT
+          echo "go-mod=$(go env GOMODCACHE)" >> GITHUB_OUTPUT
 
       - uses: actions/checkout@v2
 
